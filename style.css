@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Garante que a tela 3D do Three.js ocupe todo o fundo */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Fica atrás da classe .conteudo-centro que tem z-index: 10 */
+}
+
+/* Declaração das fontes */
+@font-face {
+    font-family: 'chopper';
+    src: url('fonts/fonts/Chopper.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thunder';
+    src: url('fonts/fonts/Thunder-MediumLC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nasa';
+    src: url('fonts/fonts/Nasa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/fonts/inter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.conteudo-centro {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    z-index: 10;
+    max-width: 900px;
+    pointer-events: none;
+}
+
+.titulo {
+    font-family: 'nasa', sans-serif;
+    font-size: 7rem;
+    line-height: 0.82;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.subtitulo {
+    font-family: 'inter', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #b0b0b0;
+    margin: 0;
+}
